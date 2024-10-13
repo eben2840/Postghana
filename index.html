@@ -41,7 +41,8 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png" height="55" alt="logo" /></a>
+        <div class="container"><a class="navbar-brand" href="index.html">
+          <img src="assets/img/gallery/logo.png" height="55" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
@@ -80,9 +81,10 @@
               <!-- <p class="fs-1 mb-5 text-light"><b>We deliver your products safely to <br />your home in a reasonable time.</b> </p> -->
               <form class="d-flex my-3 d-block ">
                 <input class="form-control me-2 border-200 bg-light p-3" type="search" placeholder="Whats your address?" aria-label="Search" />
-                <button class="btn btn-outline-primary" type="submit"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
-                
+                <!-- <button class="btn btn-outline-primary" type="submit"><i class="fa fa-location-arrow" aria-hidden="true"></i></button> -->
+                <button class="btn btn-light" type="submit"> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </form> 
+              <h4 class="text-primary">Earn With PostGhana</h4><br>
               <img src="assets/img/png-transparent-google-play-app-store-apple-apple-text-rectangle-logo-removebg-preview.png" style="width:200px;">
               <!-- <a class="btn btn-primary" href="#!" role="button">Get The App</a> -->
              
@@ -91,6 +93,32 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Button trigger modal -->
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="assets/img/gallery/logo.png" height="55" alt="logo" /></a>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5 class="text-danger">Anytime, Anywhere</h5>
+              <h2>Own A Bike In 6 Months</h2>
+              <hr>
+              <p>Work and Buy off your bike in just 6 Month</p>
+              <p>We have packages for our all our rides to own thier motorcyle in 6 months/ 1 year/ 18 months</p>
+              <p>We ensure that your product is delivered in the safest possible<br />manner, at the correct location, at the right time.</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Skipp</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continue</button>
+            </div>
+            
+           
+          </div>
+        </div>
+      </div>
 
       <section id="findUs">
 
@@ -718,7 +746,12 @@
     <!-- ===============================================-->
 
 
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+        myModal.show();
+      });
+    </script>
 
     <!-- ===============================================-->
     <!--    JavaScripts-->
